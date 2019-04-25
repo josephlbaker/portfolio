@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
-  <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
         data-target="navbarBasicExample">
@@ -46,7 +48,8 @@
       <div class="parent">
         <div class="left">
           <h1 class="bio">
-            Hi, I'm Joe — a full-stack developer based in San Francisco. I love creating beautiful websites.
+            Hi, I'm Joe — a full-stack developer based in San Francisco. I love creating beautiful and functional
+            websites.
           </h1>
         </div>
         <div class="right">
@@ -66,7 +69,7 @@
     </div>
   </section>
 
-  <section class="section projects" id="projects">
+  <section class="section skills">
     <div class="container">
       <h1 class="languages">Languages & Frameworks</h1>
       <h2>
@@ -74,43 +77,43 @@
           <div class="tile is-vertical is-12">
             <div class="tile">
               <div class="tile is-parent is-vertical">
-                <article class="tile is-child notification is-primary">
+                <article class="tile is-child notification is-info">
                   <p class="tiles">javaScript</p>
                   <!-- <p class="subtitle">Top tile</p> -->
                 </article>
-                <article class="tile is-child notification is-primary">
+                <article class="tile is-child notification is-info">
                   <p class="tiles">HTML/CSS</p>
                   <!-- <p class="subtitle">Bottom tile</p> -->
                 </article>
-                <article class="tile is-child notification is-primary">
+                <article class="tile is-child notification is-info">
                   <p class="tiles">Python</p>
                   <!-- <p class="subtitle">Bottom tile</p> -->
                 </article>
               </div>
               <div class="tile is-parent is-vertical">
-                <article class="tile is-child notification is-primary">
+                <article class="tile is-child notification is-info">
                   <p class="tiles">React</p>
                   <!-- <p class="subtitle">Top tile</p> -->
                 </article>
-                <article class="tile is-child notification is-primary">
+                <article class="tile is-child notification is-info">
                   <p class="tiles">Node</p>
                   <!-- <p class="subtitle">Bottom tile</p> -->
                 </article>
-                <article class="tile is-child notification is-primary">
+                <article class="tile is-child notification is-info">
                   <p class="tiles">SQL</p>
                   <!-- <p class="subtitle">Bottom tile</p> -->
                 </article>
               </div>
               <div class="tile is-parent is-vertical">
-                <article class="tile is-child notification is-primary">
+                <article class="tile is-child notification is-info">
                   <p class="tiles">Express</p>
                   <!-- <p class="subtitle">Top tile</p> -->
                 </article>
-                <article class="tile is-child notification is-primary">
+                <article class="tile is-child notification is-info">
                   <p class="tiles">MongoDB</p>
                   <!-- <p class="subtitle">Bottom tile</p> -->
                 </article>
-                <article class="tile is-child notification is-primary">
+                <article class="tile is-child notification is-info">
                   <p class="tiles">Flask</p>
                   <!-- <p class="subtitle">Bottom tile</p> -->
                 </article>
@@ -122,21 +125,50 @@
     </div>
   </section>
 
-  <section class="section" id="contact">
+  <section class="section projects" id="projects">
     <div class="container">
-      <h1 class="title">Section</h1>
-      <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-      </h2>
+      <h1 class="languages">My Recent Work</h1>
+      <!-- <h2>Here are a few projects i've been working on.</h2> -->
+      <div class="tile is-ancestor">
+        <div class="tile is-6 is-parent">
+          <div class="tile is-child box project">
+            <p class="project-title">Battle Buddy</p><a href="https://battle-buddy-app.herokuapp.com/">Project</a> | <a
+              href="https://github.com/josephlbaker/battle-buddy-FE">Github Repo</a>
+            <p class="project-desc">Battle Buddy is a full-stack mobile web application built using React, mongoDB,
+              express, and node.js
+              Battle Buddy was created so gamers can find other people to play their favorite games with.
+              Users can view popular games, browse that game’s feed and create events with other players in order to
+              organize parties.</p>
+            <br />
+            <br />
+            <img src="images/battle-buddy.png" alt="battle-buddy" />
+          </div>
+        </div>
+        <div class="tile is-6 is-parent">
+          <div class="tile is-child box project">
+            <p class="project-title">Cinemite</p><a href="https://cinemite-app.herokuapp.com/">Project</a> | <a
+              href="https://github.com/josephlbaker/Cinemite">Github Repo</a>
+            <p class="project-desc">Cinemite is a full-stack web application built using flask, python, and SQL
+              Cinemite was created so that people can keep track of all the movies they want to see.
+              Users can view titles sorted into popular categories or search for movies themselves. They can then view
+              details and reviews for that movie and even leave their own reviews for others to see.</p>
+            <br />
+            <img src="images/cinemite.png" alt="cinemite" />
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Section</h1>
-      <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
-      </h2>
+  <section class="section" id="contact">
+    <h1 class="contact">Get In Touch</h1>
+    <div class="container social-links">
+      <span style="font-size: 3rem;">
+        <a class="social" href="https://github.com/josephlbaker?tab=repositories"><i
+            class="fab fa-github large"></i></a>
+        <a class="social" href="mailto:joelucasbaker@gmail.com" target="_top"><i class="fas fa-envelope"></i></a>
+        <a class="social" href="https://www.linkedin.com/in/joelucasbaker/"><i class="fab fa-linkedin"></i></a>
+      </span>
     </div>
   </section>
 </body>
